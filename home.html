@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>AttenCal</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="home_style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+    </head>
+    <body>
+        <div class="container">
+            <div class="pass-cont" id="p-container">
+                <input type="text" id="emil" placeholder="Enter mail for write access">
+                <input type="password" id="pass" placeholder="Enter password for write access">
+                <button id="pass-btn">Enter</button>
+            </div>
+
+            <form>
+                <span>
+                    <select name="day" id="day"></select>
+                </span>
+                <span>
+                    <select name="month" id="month"></select>
+                </span>
+                <span>
+                    <select name="year" id="year">Year:</select>
+                </span>
+            </form>
+
+            <ul id="courses-list">
+                <li id="list-os">OS</li>
+                <li id="list-dip">DIP</li>
+                <li id="list-dm">DM</li>
+                <li id="list-dc">DC</li>
+                <li id="list-dhd">DHD</li>
+                <li id="list-rf">RF</li>
+            </ul>
+
+            <div id="courses-count">
+            </div>
+
+            <button id="button">Add</button>
+            <button id="button2">Log</button>
+
+            <div id="grapher">
+            </div>
+
+            <div id="expanded">
+                
+            </div>
+
+        </div>
+        <script src="app.js" type="module"></script>
+    </body>
+</html>

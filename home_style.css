@@ -1,0 +1,299 @@
+html,body{
+    user-select: none;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 15px auto;
+}
+
+#button{
+    color: #ffd6f8;
+    background-color: #ff4a71;
+    border: 0;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 14px;    
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;  
+    user-select:none; 
+}
+
+#button:hover{
+    background-color: #0d7511;
+    cursor: pointer;
+}
+
+#button2{
+    color: #ffd6f8;
+    background-color: #ff4a71;
+    border: 0;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 14px;    
+    text-align: center;
+    font-family: 'Rubik', sans-serif;  
+    user-select:none; 
+}
+
+#button2:hover{
+    background-color: #0d7511;
+    cursor: pointer;
+}
+
+form span{
+    display: block;
+    margin: 5px 0;
+}
+
+/*make form styling consistent across browsers*/
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+form{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 320px;
+    margin: auto;
+    user-select: none;
+    gap:0 5px;
+}
+
+form select{
+    padding: 10px 20px;
+    border-radius: 5px;
+    flex-grow: 1;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    background-color: #ffe4e9;
+    border: 0;
+}
+
+#courses-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 320px;
+    margin: 30px auto;
+    gap: 5px 5px;
+    user-select: none;
+}
+
+#courses-count{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 320px;
+    margin: 15px auto;
+    gap: 10px 5px;
+    user-select: none;
+}
+
+.cc-cont{
+    padding: 10px 30px;
+    border-radius: 5px;
+    flex-grow: 1;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    background-color: #ffe4e9;
+}
+
+.cc-cont label{
+    text-align: center;
+}
+
+.cc-cont input{
+    background-color:#fff7e6;
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;    
+    text-align: center;
+    font-family: 'Rubik', sans-serif;  
+    user-select:none; 
+}
+
+#courses-list li{
+    padding: 15px 30px;
+    border-radius: 5px;
+    flex-grow: 1;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    background-color: #ffe4e9;
+}
+
+form label{
+    font-family: 'Rubik', sans-serif;
+}
+
+#grapher{
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 15px auto;
+    gap: 5px;
+}
+
+.graph-ele{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #ff9ea3;
+}
+
+.graph-fill{
+    width: 0px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #74ff82;
+}
+
+.contoftwo{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    background-color: #ffe4e9;
+    height: 30px;
+}
+
+.det-view{
+    width: 300px;
+    padding: 10px 0;
+    border-radius: 5px;
+    background-color: #ff4a71;
+    display: flex;
+    flex-direction: column;
+}
+
+.marked-cal{
+    width: 250px;
+    padding: 5px 5px;
+    margin: 0px auto;
+    border-radius: 5px;
+    background-color: #ffe4e9;
+    display: flex;
+    flex-direction: column;
+}
+
+#mark-month{
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0px auto;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    background-color: #ffe4e9;
+    border: 0;
+}
+
+#mark-days{
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.mark-cell{
+    font-size: 15px;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.pres-cell{
+    background-color: #06540d;
+}
+
+.abs-cell{
+    background-color: #690118;
+}
+
+.graphtitle{
+    height: 30px;
+    text-align: center;
+    width: 40px;
+}
+
+.graphstat{
+    height: 30px;
+    text-align: center;
+    width: 60px;
+
+}
+
+.graphtitle, .graphstat{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.pass-cont{
+    padding: 0px 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    background-color: #ffe4e9;
+    gap: 5px 0;
+}
+
+#emil{
+    margin-top: 5px;
+    background-color:#fff7e6;
+    flex-grow: 1;
+    height: 25px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;    
+    text-align: center;
+    font-family: 'Rubik', sans-serif;  
+    user-select:none; 
+}
+
+#pass{
+    background-color:#fff7e6;
+    flex-grow: 1;
+    height: 25px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;    
+    text-align: center;
+    font-family: 'Rubik', sans-serif;  
+    user-select:none; 
+}
+
+#pass-btn{
+    margin-bottom: 5px;
+    color: #ffd6f8;
+    background-color: #ff4a71;
+    border: 0;
+    padding: 5px 5px;
+    border-radius: 5px;
+    font-size: 14px;    
+    text-align: center;
+    font-family: 'Rubik', sans-serif;  
+    user-select:none; 
+}
+
+.pass-cont p{
+    font-size: 10px;
+}
+
