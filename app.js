@@ -235,8 +235,9 @@ function graphAttendance(){
     graphEl.innerHTML += `
     <div class="contoftwo" id="gc${courses[i]}">
     <div class="graphtitle"}>${courses[i]}</div>
-    <div class="graph-ele">
-    <div class="graph-fill" id="g${courses[i]}"></div>    
+    <div class="graph-ele" id="ge${courses[i]}">
+    <div class="graph-ratio" id="gr${courses[i]}"></div>    
+    <div class="graph-fill" id="g${courses[i]}"></div>
     </div>
     <div class="graphstat" id="stat${courses[i]}"}></div>
     </div>
@@ -255,6 +256,7 @@ function graphAttendance(){
         if(total != 0){
           document.getElementById(`g${courses[i]}`).style.width = `${(pres/total)*200}px`;
           document.getElementById(`stat${courses[i]}`).innerHTML = `${Math.round((pres/total)*100*10)/10}%`
+          document.getElementById(`gr${courses[i]}`).innerHTML = `${pres}/${total}`
         }
         else{
           document.getElementById(`g${courses[i]}`).style.width = "200px";
