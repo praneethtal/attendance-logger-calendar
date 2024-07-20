@@ -1,0 +1,10 @@
+{
+    "name":"Attendance and Task Calendar",
+    "short_name":"AttenTaskCal",
+    "icons":
+        [
+            {"src":"/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},
+            {"src":"/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}
+        ],
+    "theme_color":"rgb(73, 19, 124);","background_color":"rgb(30, 30, 30);","display":"standalone"
+}

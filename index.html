@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login - Attendance & Task Calendar</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="home_style.css">
+    </head>
+    <body>
+    <div id="container">
+        <style type="text/css">
+            .auth-container{
+                width: 320px;
+                height: 400px;
+                background-color: rgb(102, 34, 166);
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+            }
+            #welcome{
+                margin-top: 30px;
+                margin-left: auto;
+                margin-right: auto;
+                color: aliceblue;
+                font-weight: bold;
+                font-size: 30px;
+            }
+            #instruct{
+                margin: 0 auto 5px auto;
+                color: aliceblue;
+                font-weight: 400;
+                font-size: 16px;
+            }
+            #email-in, #pass-in{
+                margin: 5px auto 0 auto;
+                width: 240px;
+                height: 24px;
+                font-size: 16px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-align: center;
+                border: 0px;
+                border-radius: 4px;
+            }
+            input:focus{
+                outline: none;
+            }
+            #sign-in-btn{
+                background-color: rgb(170, 85, 255);
+                border-radius: 5px;
+                margin: 5px auto;
+                height: 40px;
+                width: 240px;
+                border: 0px;
+                color: aliceblue;
+                font-size: 16px;
+                font-weight:700;
+            }
+            #sign-in-btn:active{
+                background-color: rgb(77, 27, 121);
+            }
+        </style>
+        <div class="auth-container">
+            <div id="welcome">Welcome</div>
+            <div id="instruct">Sign in via email and password.</div>
+            <input id="email-in">
+            <input type="password" id="pass-in">
+            <button id="sign-in-btn">Sign in</button>
+        </div>
+    </div>
+    <script src="app.js" type="module"></script>
+    </body>
+</html>
