@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
     --basepurple: rgb(102, 34, 166);
     --darkerpurple: rgb(73, 19, 124);
@@ -32,8 +35,11 @@ html,body{
 }
 
 h1{
- margin: auto;
+    margin: auto;
     color:aliceblue;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 750;
+    font-style: normal;
 }
 
 
@@ -65,25 +71,38 @@ button, input, select, textarea {
     background-color: var(--lighterpurpleClicked);
 }
 
-form{
-    margin: auto;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    max-width: 310px;
-    margin: auto;
-    user-select: none;    
-    gap:0 10px;
+#add-attendance{
+    width: 320px;
 }
 
-form select{
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-family: 'Rubik', sans-serif;
-    font-size: 14px;
-    text-align: center;
-    background-color: var(--lighterpurple);
-    border: 0;
+/* Assuming your form has a parent container with a defined width */
+form {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: wrap;
+  width: 320px;
+  margin: 0 auto; /* Center horizontally */
+  user-select: none;
+  gap: 0 10px;
+}
+
+form span{
+  flex-grow: 1;
+  display: flex;
+}
+
+form select {
+ flex-grow: 1;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  background-color: var(--lighterpurple);
+  border: 0;
 }
 
 #courses-list{
@@ -112,8 +131,9 @@ form select{
     padding: 15px 30px;
     border-radius: 5px;
     flex-grow: 1;
-    font-family: 'Rubik', sans-serif;
-    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     text-align: center;
     background-color: var(--lighterpurple);
 }
